@@ -1,0 +1,34 @@
+@import '../../../../less/index.less';
+
+.iconWrapDiv {
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon {
+	font-size: 3rem;
+	cursor: pointer;
+	.transition(all .5s linear );
+	display: none;
+	&:hover {
+		color: @mainYellow;
+	}
+	@media @768 {
+		display: flex;
+		justify-content: space-around;
+		width: 5rem;
+	}
+
+}
+
+.instagramIcon {
+	color: #da5f53;
+}
+
+.facebookIcon {
+	color: #3b579d;
+}
+
+.twitterIcon {
+ color: #3ab7f0;
+}
