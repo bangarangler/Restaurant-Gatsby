@@ -1,0 +1,21 @@
+@import '../less/index.less';
+
+.bannerButton {
+	.custom-btn(auto, auto, @mainWhite, transparent );
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size: 2.3rem;
+	.letterSpacing (.5rem);
+	font-weight: 700;
+	display: block;
+	background: transparent;
+	margin-bottom: 1rem;
+	.transition (all .5s linear);
+	margin: 2rem auto;
+	/*.button-creator(auto, auto, transparent, @mainWhite, 2.3rem);*/
+	&:hover {
+		color: @mainBlack;
+		border: 1px solid @mainBlack;
+	}
+
+}
