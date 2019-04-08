@@ -5,4 +5,8 @@ const BannerButton = props => {
   return <button className={styles.bannerButton}>{props.children}</button>
 }
 
-export { BannerButton }
+const SectionButton = props => {
+  return <button className={styles.SectionButton}>{props.children}</button>
+}
+
+export { BannerButton, SectionButton }

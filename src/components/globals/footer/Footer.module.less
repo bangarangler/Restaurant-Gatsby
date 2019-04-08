@@ -1,0 +1,56 @@
+@import '../../../less/index.less';
+
+.footerWrapper {
+	padding: 2rem 0;
+	background: @mainBlack;
+	/*.custom-layout(space-between, center);*/
+
+	.icons {
+		.custom-layout(space-between, center);
+		width: 20rem;
+		margin: 0 auto;
+		/*border: @showMe;*/
+
+		.icon {
+			font-size: 2.5rem;
+			color: @mainWhite;
+			.transition (all 0.5s linear);
+			&:hover {
+				color: @mainYellow;
+			}
+
+		}
+	}
+
+}
+
+.title {
+	text-align: center;
+	width: 15rem;
+	color: @mainYellow;
+	text-transform: uppercase;
+	padding: 0.6rem 1.5rem;
+	margin: 0 auto 2rem auto;
+	font-size: 2.2rem;
+	border: 1px solid @mainYellow;
+}
+
+
+.facebookIcon {
+
+}
+
+.twitterIcon {
+
+}
+
+.instagramIcon {
+
+}
+
+.copyright {
+	color: @mainWhite;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 1rem 0;
+}

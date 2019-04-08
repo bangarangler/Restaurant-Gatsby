@@ -19,3 +19,21 @@
 	}
 
 }
+
+.SectionButton {
+	.custom-btn(auto, auto, @mainBlack, @mainWhite );
+	.transition (all .5s linear);
+	margin: 2rem auto;
+	border: 1px solid @mainBlack;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	.letterSpacing (.5rem);
+	font-weight: 700;
+	display: block;
+	&:hover {
+		color: @mainYellow;
+		border: 1px solid @mainYellow;
+	}
+
+}

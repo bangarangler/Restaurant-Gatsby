@@ -12,8 +12,8 @@ const SectionTitle = ({ title, message }) => {
 }
 
 SectionTitle.defaultProps = {
-message: 'Our message',
-title: 'out title'
+  message: "Our message",
+  title: "out title",
 }
 
 export default SectionTitle
