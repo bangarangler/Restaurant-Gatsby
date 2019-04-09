@@ -11,7 +11,7 @@ export default class QuickInfo extends React.Component {
       <Section>
         <SectionTitle message="let us tell you" title="our mission" />
         <QuickInfoWrapper>
-          <p>
+          <React.Fragment>
             {" "}
             Sit quod iure ab aliquid eius Totam eius iste impedit exercitationem
             eveniet. Distinctio maxime cum magni doloribus et Harum natus
@@ -19,7 +19,7 @@ export default class QuickInfo extends React.Component {
             auteexpedita quaerat? Distinctio aspernatur recusandae provident
             harum autem. Accusamus culpa ab nemo ipsam sunt Nostrum sit
             quibusdam explicabo debitis facere
-          </p>
+          </React.Fragment>
           <Link to="/about" style={{ textDecoration: `none` }}>
             <SectionButton>about</SectionButton>
           </Link>

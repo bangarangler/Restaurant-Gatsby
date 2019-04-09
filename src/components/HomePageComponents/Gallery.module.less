@@ -1,0 +1,54 @@
+@import "../../less/index.less";
+
+.GalleryWrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 1rem;
+
+  @media @576 {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  @media @768 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media @992 {
+    // had to use inline style on Img tag to correct!
+    /*.gatsby-image-wrapper {*/
+      /*height: 100%;*/
+      /*display: contents;*/
+    /*}*/
+    grid-template-areas:
+      "one one two two"
+      "one one three three";
+
+    .item1 {
+      grid-area: one;
+    }
+
+    .item2 {
+      grid-area: two;
+    }
+
+    .item3 {
+      grid-area: three;
+    }
+  }
+
+  .item {
+    position: relative;
+    /*left: 0;*/
+    /*top: 0;*/
+  }
+
+  .info {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: @mainYellow;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+  }
+}
