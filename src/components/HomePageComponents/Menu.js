@@ -32,9 +32,16 @@ export default function Menu() {
     <Section>
       <SectionTitle title="featured items" message="little taste" />
       <div className={styles.ProductList}>
-        <StaticQuery query={PRODUCTS} render={data => console.log(data)} />
+        <StaticQuery
+          query={PRODUCTS}
+          render={data => {
+            const products = data.items.edges
+            return products.map(item => {
+              return <Product key={item.node.id} product={item.node} />
+            })
+          }}
+        />
       </div>
-      <Product />
     </Section>
   )
 }

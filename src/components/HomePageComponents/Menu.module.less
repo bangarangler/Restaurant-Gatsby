@@ -1,0 +1,19 @@
+@import '../../less/index.less';
+.ProductList {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 3rem;
+
+  @media @576 {
+    grid-template-columns: 95%;
+  }
+	@media @776 {
+		grid-template-columns: 80%;
+		justify-content: center;
+	}
+	@media @992 {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2.5rem;
+	}
+}

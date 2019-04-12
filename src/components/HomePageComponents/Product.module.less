@@ -1,0 +1,30 @@
+@import '../../less/index.less';
+
+.ProductWrapper {
+  @media @576 {
+    display: grid;
+		grid-template-columns: auto 1fr;
+		grid-column-gap: 1.5rem;
+  }
+	.img {
+		border-radius: .5rem;
+	}
+	.productContent {
+		.custom-layout(space-between, center);
+		font-size: 2.8rem;
+		text-transform: uppercase;
+	}
+	.name {
+		color: @mainYellow;
+		margin-top: .9rem;
+	}
+	.price {
+		color: @mainYellow;
+		margin-top: .9rem;
+	}
+	.info {
+		margin-top: .9rem;
+		word-spacing: .5rem;
+		text-transform: lowercase;
+	}
+}
